@@ -4,10 +4,13 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/crs-build-showcase-main/",   
+  base: "/crs-build-showcase-main/",
   server: {
     host: "::",
     port: 8080,
+  },
+  build: {
+    sourcemap: true, 
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
