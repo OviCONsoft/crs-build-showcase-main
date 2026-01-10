@@ -1,1 +1,1 @@
-CONinex group SRL
+CONinex group S.R.L.
